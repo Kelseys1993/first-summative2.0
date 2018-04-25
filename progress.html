@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Digital Ordering App</title>
+</head>
+<body>
+	<div class="browsersize">
+			<h1 class='message'>Please resize Browser</h1>
+		</div>
+	<div class="container--two2">
+	<div class="section section--header2">
+		<div id="popup">
+
+				<span id="close">X</span>
+				<div id="words"> <p> A waiter is on their way!</p> </div>
+
+			</div>
+			<button type="button" id="button2"> Call Waiter</button>
+			<img src="img/logo3.0.png" alt="art of pizza logo" id="logo3">
+
+		
+	</div>
+
+
+
+	<div class="section section--body2">
+<div class="progress">	
+			
+			<p id="yourOrder">Your Order</p>
+			
+	
+		<table id="cartTable" class="cartTable">
+			<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Subtotal</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="CartContainer">
+				<tr id="template" class="product">
+					<td class="product_title"></td>
+					<td class="product_quantity"></td>
+					<td>$<span class='product_price'></span></td>
+					<td>$<span class='sub_price'></span></td>
+					
+				</tr>
+			</tbody>
+		</table>
+	
+	
+	<strong><p id="orderPrice" class="orderprice">Total Order Price ($<span class="priceCount"></span>)</p></strong>
+	</div>
+<div id="myProgress">
+	
+	 
+	 <div id="myBar" onclick="move()"> </div>
+	</div>
+	
+	<button id="button5" onclick="move()"> Click for Order Progress</button>
+
+
+
+	<a href="index.html"><button id="clear" class="button4"> Place Next Order</button></a>
+
+	</div>
+
+
+
+	<div class="section section--footer2">
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/cartFunction.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

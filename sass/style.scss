@@ -1,0 +1,182 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "modules/cart";
+@import "layout/grid";
+@import "modules/nav";
+@import "modules/popups";
+@import "state/mediaqueries";
+
+
+/* Splash Page */
+
+body{
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	display: inline;
+}
+.browsersize {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	display: none;
+}
+.message {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+#body{
+	background-color: $primary-color;
+	width: 100vw;
+	min-width: 414px;
+	height: 100vh;
+	margin: 0 auto;
+	}
+
+.logo1{
+   
+    display: none;
+}
+.logo2{
+		margin-left: 25%;
+    margin-top: 36%;
+}
+#button1{
+	 width: 286px;
+    height: 63px;
+    margin-left: 16%;
+    margin-top: 32%;
+	@include buttonStyle;
+	font-size: 32px;
+
+
+}
+ // header
+ .currentPage {
+ 	color: #800000;
+ }
+#logo{
+	width:177px;
+	height: 150px;
+	display: none;
+}
+#logo2{
+	width:73px;
+	height: 55px;
+	margin-left: 16%;
+	margin-top:20px;
+}
+#pizzaicon{
+	position: absolute;
+	left:65px;
+	display: none;
+}
+#breadicon{
+	position: absolute;
+	display: none;
+	left:230px;
+	
+
+}
+#glassicon{
+	position: absolute;
+	left:410px;
+	display: none;
+}
+#cakeicon{
+	position: absolute;
+	left:590px;
+	display: none;
+
+}
+#button2{
+	@include buttonStyle;
+	margin-left: 16px;
+	margin-top: 10px;
+	
+	float: left;
+
+}
+
+#pagename{
+	@include pageName;
+	
+	}
+.pizza{
+	@include pizzaButtonStyle;
+	position: relative;
+}
+
+
+#button3{
+@include buttonStyle;
+width:142px;
+height: 25px;
+ margin-top: 20px;
+ margin-left: 28%;
+
+
+}
+
+#myProgress {
+    width: 90%;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+  	margin-left: 5%;
+    margin-top: 70px;
+
+
+}
+#myBar {
+    width: 5%;
+    height: 30px;
+    background-color: #800000;
+    border-radius: 20px;
+ 
+}
+.button4{
+	@include buttonStyle;
+	width:286px;
+	height:63px;
+	font-size: 20px;
+	margin-left: 15%;
+    margin-top:40px;
+}
+#progress{
+	color: $primary-color;
+	font-size: 25px;
+	font-family: $font;
+	display: inline;
+	margin-left: 75px;
+
+}
+#button5{
+	@include cartButton;
+	width:200px;
+	font-size: 14px;
+	margin-top: 15px;
+    margin-left: 25%;
+	border:2px solid $secondary-color;
+}
+#logo3{
+	width: 129px;
+	height: 97px;
+	margin-top: 6%;
+    margin-left: 10%;
+}
+
+.iconsc{
+	color: $secondary-color;
+	font-family: $font;
+	font-size: 8px;
+	margin-left: 50px;
+	margin-top: 5px;
+	a{
+	color: $secondary-color;
+	font-family: $font;
+	font-size: 8px;
+	text-decoration: none;
+	}
+}

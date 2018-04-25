@@ -1,0 +1,81 @@
+@mixin buttonStyle{
+	background-color: $primary-color;
+	border: solid 2px $secondary-color;
+	border-radius: 5px;
+	color:$secondary-color;
+	font-family:$font;
+	font-size: 14px;
+
+}
+@mixin pizzaButtonStyle{
+	background-color: $primary-color;
+	height:95px;
+	border-radius: 5px;
+	margin-left: 25px;
+	margin-right:25px;
+}
+@mixin cartButton{
+	background-color: #800000;
+	color: $secondary-color;
+	font-size: 20px;
+	border-radius: 10px;
+	border:none;
+	width:30px;
+	height: 30px;
+	padding:0px;
+	font-family: $font;
+	
+	
+
+	}
+@mixin style{
+	height: 88%;
+	 grid-column: 1 / 7;
+	background-color: black;
+	margin-right: 25px;
+	min-height:200px;
+	margin-left: 25px;
+	margin-bottom:10px;
+	border-radius: 10px;
+	margin-top:20px;
+
+}
+@mixin sendToKitchen{
+	background-color: #800000;
+	color: $secondary-color;
+	font-size: 20px;
+	border-radius: 10px;
+	border:none;
+	font-family: $font;
+	margin-left: 110px;
+	margin-bottom: 10px;
+}
+@mixin cartStyle{
+	color: $secondary-color;
+	font-family: $font;
+	font-size: 14px;
+	
+}
+@mixin productStyle{
+	color: $secondary-color;
+	font-family: $font;
+	font-size: 16px;
+	display: inline-block;
+}
+@mixin pageName{
+	background-color: $primary-color;
+	font-family: $font;
+	color: $secondary-color;
+	font-size: 40px;
+	display: none;
+	height: 53px;
+	p{
+		padding-top: 5px;
+		padding-left: 25px;
+	}
+
+
+
+
+
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content"width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Digital Ordering App</title>
+</head>
+<body>
+	<div class="browsersize">
+			<h1 class='message'>Please resize Browser</h1>
+		</div>
+	<div class="container--two">
+	<div class="section section--header">
+		<strong><p id="cartCount" class="count">Cart Count (<span class="cartCount"></span>)</p></strong>
+		<div id="popup2">
+
+			<ul>
+					<li><a href="pizzas.html">Parehe</a></li>
+					<li><a href="sides.html">Kīnaki</a></li>
+					<li><a href="drinks.html">Inuinu</a></li>
+					<li><a href="desserts.html" class="currentPage">Purini</a></li>
+				</ul>
+
+			</div>
+
+		<div id="popup">
+
+				<span id="close">X</span>
+				<div id="words"> <p> A waiter is on their way!</p> </div>
+
+			</div>
+
+		<button type="button" id="button2"> Call Waiter</button>
+
+		<img src="img/logo2.0.png" alt="art of pizza logo" id="logo2">
+
+<img src="img/logo1.png" alt="art of pizza logo" id="logo">
+			
+	<a href="pizzas.html"><img src="img/pizza.png" alt="pizza slice" id="pizzaicon"></a>
+	<a href="sides.html"><img src="img/bread.png" alt="bread" id="breadicon"></a>
+	<a href="drinks.html"><img src="img/glass.png" alt="pizza slice" id="glassicon"></a>
+	<a href="desserts.html"><img src="img/cake.png" alt="cake slice" id="cakeicon"></a>
+				
+		
+			<ul>
+				<li><a href="pizzas.html">Pizzas</a></li>
+				<li><a href="sides.html">Sides</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+				<li><a href="desserts.html"class="currentPage" >Desserts</a></li>
+			</ul>
+	
+
+	</div>
+
+
+
+	<div class="section section--body">
+<div id="pagename"><p>Desserts</p></div>
+			<div class="wrapper">
+				<div class="pizza product prod1">
+					<p class="product_title title">Mudcake</p>
+					<p id="product_price" class="product_price1">$<span class="product_price price">8.5</span></p>
+					<p id="product_description3">Mississippi Mudcake with berry coulis <br>and whipped cream</p>
+					<button class="add">+</button>
+					<button class="remove">-</button>
+				</div>
+				<div class="pizza product prod2">	
+					<p class="product_title title title5">Cheesecake</p>
+					<p id="product_price" class="product_price6">$<span class="product_price price">8.5</span></p>
+					<p id="product_description3">New York Chessecake with berry coulis <br>and whipped cream</p>
+					<button class="add">+</button>
+					<button class="remove">-</button>
+				</div>
+				<div class="pizza product prod3">	
+					<p class="product_title title title5">Classic Sundae</p>
+					<p id="product_price" class="product_price6">$<span class="product_price price">9.5</span></p>
+					<p id="product_description3">Vanilla ice cream with chocolate sauce <br>and whipped cream</p>
+					<button  class="add">+</button>
+					<button class="remove">-</button>
+				</div>
+				<div class="pizza product prod4">	
+					<p class="product_title title2" >Gourmet Sundae</p>
+					<p id="product_price" class="product_price6">$<span class="product_price price">10.5</span></p>
+					<p id="product_description5">Vanilla ice cream with oreo, wafers, <br>chocolate sauce and whipped cream</p>
+					<button class="add">+</button>
+					<button class="remove">-</button>
+				</div>
+			
+<div class="cartbackground1">
+		<button id="clear" class="clear">Clear Cart</button>	
+			<p class="cartTitle">My Cart</p>
+			<strong><p id="cartCount">Cart Count (<span class="cartCount"></span>)</p></strong>
+	
+		<table id="cartTable">
+			<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Subtotal</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="CartContainer">
+				<tr id="template" class="product">
+					<td class="product_title "></td>
+					<td class="product_quantity"></td>
+					<td>$<span class='product_price '></span></td>
+					<td>$<span class='sub_price'></span></td>
+					<td><button class='add cartbutton1'>+</button><button class='remove cartbutton2'>-</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="popup3">
+	<p id="question"> Are you sure?<p><a href="progress.html"><button id="kitchen2"> Yes</button></a> <button id="nobutton">No</button>
+				 </div>
+	
+	<strong><p id="orderPrice">Total Order Price ($<span class="priceCount"></span>)</p></strong>
+		<a><button id="kitchen"> Send To Kitchen </button></a>
+	</div>
+
+	</div>
+
+
+
+	</div>
+
+
+
+	<div class="section section--footer">
+		<button type="button" id="button3"> Toggle Te Reo Maori</button>
+		<div class="iconsc">Icons made by <a href="https://www.flaticon.com/authors/papedesign" title="Papedesign">Papedesign</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/cartFunction.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
