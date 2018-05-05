@@ -1024,6 +1024,9 @@ li a {
   .container--two {
     display: none; }
 
+  #body {
+    display: none; }
+
   .browsersize {
     display: block !important; } }
 /* Splash Page */
@@ -1042,7 +1045,9 @@ body {
 .message {
   color: white;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  font-family: "Droid Sans", sans-serif;
+  padding-top: 80%; }
 
 #body {
   background-color: #000000;
